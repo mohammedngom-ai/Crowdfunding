@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand: #0C4693;
+  --color-brand-dark: #0a3a7d;
+  --color-brand-light: #E6EEF4;
+  --color-gold: #987D40;
+  --color-gold-dark: #755B33;
+  --color-navy: #171B31;
+  --color-surface: #ffffff;
+  --color-bg: #ffffff;
+  --color-bg-alt: #E6EEF4;
+  --color-border: #e2e8f0;
+  --color-muted: #8B91A5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #171B31;
+  -webkit-font-smoothing: antialiased;
+}
+
+.orange-gradient {
+  background: linear-gradient(135deg, #0C4693 0%, #0a3a7d 100%);
+}
+
+.orange-text {
+  color: #0C4693;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.card-hover {
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.card-hover:hover {
+  box-shadow: 0 6px 20px rgba(12,70,147,0.12), 0 2px 6px rgba(0,0,0,0.06);
+  border-color: #597CB4;
+  transform: translateY(-2px);
+}
+
+.progress-bar {
+  height: 6px;
+  background: #E6EEF4;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0C4693, #0a3a7d);
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.section-alt {
+  background-color: #E6EEF4;
+}
